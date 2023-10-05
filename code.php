@@ -9,6 +9,7 @@
     <?php
         echo "<h1>Mag code kayo guys</h1>";
         echo "<p>Bat ka nambibigla</p>";
+        echo "<h2>Wag kang ganyan</h2>";
     ?>
 </body>
 </html>
