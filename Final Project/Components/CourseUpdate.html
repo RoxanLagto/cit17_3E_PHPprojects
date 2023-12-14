@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Course Information</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: black;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: white;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        button[type="submit"] {
+            background-color: white;
+            color: black;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-family: 'Poppins';
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Update Course Information</h1>
+    </header>
+
+    <form action="CourseUpdate.php" method="POST">
+        <label for="coursesID">Course ID:</label>
+        <input type="text" id="coursesID" name="coursesID" required>
+
+        <label for="courseName">Course Name:</label>
+        <input type="text" id="courseName" name="courseName" required>
+
+        <label for="courseCode">Course Code:</label>
+        <input type="text" id="courseCode" name="courseCode" required>
+
+        <label for="courseDescription">Course Description:</label>
+        <input type="text" id="courseDescription" name="courseDescription"  required></textarea>
+
+        <button type="submit" name="Update">Update Course</button>
+    </form>
+</body>
+
+</html>

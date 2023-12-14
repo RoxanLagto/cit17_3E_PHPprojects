@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Poppins';
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        h1, h4 {
+            color: black;
+        }
+
+        form {
+            margin: 20px;
+            padding: 20px;
+            background-color: black;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .custom-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: white;
+            color: black;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-family: 'Poppins';
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <h4> Enter the required field below</h4>
+
+    <form action="RegisterInfo.php" method="POST">
+        <fieldset>
+            <label>Enter your email:
+                <input id="email" name="email" type="text" class="custom-input" placeholder="Email" required>
+            </label>
+
+            <label>Enter your First Name:
+                <input id="firstname" name="firstname" type="text" class="custom-input" placeholder="First Name" required>
+            </label>
+
+            <label>Enter your Last Name:
+                <input id="lastname" name="lastname" type="text" class="custom-input" placeholder="Last Name" required>
+            </label>
+
+            <label>Enter your Age:
+                <input id="age" name="age" type="number" class="custom-input" placeholder="Age" required>
+            </label>
+
+            <label>Enter your Contact:
+                <input id="phoneNumber" name="phoneNumber" type="text" class="custom-input" placeholder="Contact" required>
+            </label>
+
+            <label>Enter your Address:
+                <input id="address" name="address" type="text" class="custom-input" placeholder="Address" required>
+            </label>
+
+            <input type="submit" value="Register Now" class="custom-input">
+        </fieldset>
+    </form>
+</body>
+
+</html>
