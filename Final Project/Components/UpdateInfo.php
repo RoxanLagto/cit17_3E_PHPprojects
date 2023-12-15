@@ -57,8 +57,8 @@ if (isset($_POST['Update'])) {
     
 </head>
 <body>
-    <h1>Your data has been successfully updated!</h1>
-    <button ><a href="View.php">VIEW DETAILS</button></a>
+    <h1>Your data is successfully updated!</h1>
+    <button ><a href="View.php">View Details</button></a>
    
 </body>
 </html>

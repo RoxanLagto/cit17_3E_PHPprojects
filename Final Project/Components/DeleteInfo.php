@@ -54,6 +54,6 @@ if (isset($_POST['Delete'])) {
 </head>
 <body>
     <h1>Your data has been Deleted!</h1>
-    <button><a href="View.php" style="text-decoration: none; color: white;">VIEW DETAILS</a></button>
+    <button><a href="View.php" style="text-decoration: none; color: white;">View Details</a></button>
 </body>
 </html>

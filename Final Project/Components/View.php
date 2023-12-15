@@ -94,10 +94,10 @@
         }
         ?>
     </table>
-    <button><a href="UpdateInfo.html" style="font-family:'Poppins';">Update your details</a></button>
-    <button><a href="DeleteInfo.html" style="font-family:'Poppins';">Delete your account</a></button>
-    <button><a href="RegisterInfo.html" style="font-family:'Poppins';">Register another account</a></button>
-    <button><a href="Start.html" style="font-family:'Poppins';">Return to homepage</a></button>
+    <button><a href="UpdateInfo.html" style="font-family:'Poppins';">Update Details</a></button>
+    <button><a href="DeleteInfo.html" style="font-family:'Poppins';">Delete Account</a></button>
+    <button><a href="RegisterInfo.html" style="font-family:'Poppins';">Create Another Account</a></button>
+    <button><a href="Start.html" style="font-family:'Poppins';">Menu</a></button>
 </body>
 
 </html>

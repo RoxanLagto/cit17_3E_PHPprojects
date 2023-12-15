@@ -7,6 +7,12 @@
     <meta http-equiv="refresh" content="30">
     <title>ENROLLMENT</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            text-align: center;
+        }
+
         table {
             border-collapse: collapse;
             width: 100%;
@@ -16,41 +22,39 @@
             border: 1px solid black;
             padding: 8px;
             text-align: left;
+            color: black; 
         }
 
         th {
-            background-color: #f2f2f2;
+            background-color: darkgray;
         }
 
         button {
             display: block;
             margin: 20px auto;
             padding: 10px;
-            background-color: #4caf50;
-            color: white;
+            background-color: black; 
+            color: white; 
             text-decoration: none;
             font-size: 16px;
-            cursor: pointer;
-            border: none; 
+            border: none;
             text-align: center;
         }
 
         button a {
-            color: white;
-            text-decoration: none; 
+            color:white; 
+            text-decoration: none;
         }
 
-        button:hover {
-            background-color: #45a049;
-        }
+
     </style>
 </head>
 <body>
     <table>
         <tr>
-            <th>User Id</th>
+            <th>User ID</th>
             <th>First Name</th>
-            <th>Course Id</th>
+            <th>Course ID</th>
             <th>Course Name</th>
         </tr>
     
@@ -59,7 +63,7 @@
             if ($conn->connect_error) {
                 die('Connection Failed: ' . $conn->connect_error);
             } else {
-                $query = "SELECT users.usersID, users.firstName, course.coursesID, course.courseName FROM users, course;";
+                $query = "SELECT USERS.usersID, USERS.firstName, COURSE.coursesID, COURSE.courseName FROM USERS, COURSE;";
                 $result = $conn->query($query);
     
                 if ($result->num_rows > 0) {
@@ -70,11 +74,11 @@
                         echo "<td>" . $row["courseName"] . "</td></tr>";
                     }
                 } else {
-                    echo "<tr><td colspan='4'>NO ENROLLMENT AS OF THE MOMENT</td></tr>";
+                    echo "<tr><td colspan='4'>NO ENROLLMENTS AS OF THE MOMENT</td></tr>";
                 }
             }
         ?>
     </table>
-    <button><a href="Start.html">Return to homepage</a></button>
+    <button><a href="Start.html">Menu</a></button>
 </body>
 </html>

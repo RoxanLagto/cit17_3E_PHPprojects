@@ -5,7 +5,7 @@
         die('Connection Failed: ' . $conn->connect_error);
     }
 
-    $courseId = $_POST['coursesID'];
+    $coursesID = $_POST['coursesID'];
 
     $queryDelete = "DELETE FROM COURSE WHERE coursesID='$coursesID'";
     
@@ -28,36 +28,38 @@
     <title>Delete Information</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
             text-align: center;
+            filter: grayscale(100%);
         }
 
         h1 {
-            color: #333;
+            color: black;
         }
 
         button {
             padding: 10px 20px;
             font-size: 16px;
             margin-top: 20px;
-            background-color: #4caf50;
-            color: #fff;
+            background-color: black;
+            color: white;
             text-decoration: none;
             border: none;
-            cursor: pointer;
             border-radius: 5px;
         }
 
-        button:hover {
-            background-color: #45a049;
+        a {
+            color: white;
+            text-decoration: none;
         }
+
     </style>
     
 </head>
 <body>
     <h1>Your course has been Deleted!</h1>
-    <button ><a href="CourseView.php">VIEW DETAILS</button></a>
+    <button ><a href="CourseView.php">View Details</button></a>
    
 </body>
 </html>

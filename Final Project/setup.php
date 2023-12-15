@@ -89,6 +89,6 @@ $sqlUSERS = "CREATE TABLE USERS  (
 </head>
 <body> 
     <h1 class="heading">STUDENT INFORMATION SYSTEM</h1>  
-    <button class="register-button" ><a href="./Project/Start.html" style="text-decoration:none; font-family:'Poppins';">Register</button></a>
+    <button class="register-button" ><a href="./Components/Start.html" style="text-decoration:none; font-family:'Poppins';">Register</button></a>
 </body>
 </html>

@@ -31,9 +31,10 @@
     <title>Update Course</title>
     <style>
         body {
-            font-family: 'Poppins', 'Poppins';
+            font-family: 'Poppins';
             background-color: #f0f0f0;
             text-align: center;
+            filter: grayscale(100%);
         }
 
         h1 {
@@ -44,21 +45,24 @@
             padding: 10px 20px;
             font-size: 16px;
             margin-top: 20px;
-            background-color: #4caf50;
-            color: #fff;
+            background-color: black;
+            color: white;
             text-decoration: none;
             border: none;
             border-radius: 5px;
         }
 
-        button:hover {
-            background-color: #45a049;
+        a {
+            color: inherit;
+            text-decoration: none;
+            font-family:inherit;
         }
+
     </style>
 </head>
 <body>
     <h1>Your course data has been successfully updated!</h1>
-    <button ><a href="CourseView.php">VIEW DETAILS</button></a>
+    <button ><a href="CourseView.php">View Details</button></a>
    
 </body>
 </html>
